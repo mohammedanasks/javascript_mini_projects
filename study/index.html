@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <h1 id="key"></h1>
+
+
+   <script>
+       let student = `[
+           {
+            "name":"anas",
+            "age":32,
+            "place":"kochin"
+           },
+           {
+            "name":"ajish",
+            "age":32,
+            "place":"calicut"
+           }
+       ]`
+       console.log(student);
+       console.log(JSON.parse(student));
+       console.log(JSON.parse(student)[0]);
+       console.log(JSON.parse(student)[0].name);
+   </script>
+
+    <script src="hom.js"></script>
+</body>
+</html>

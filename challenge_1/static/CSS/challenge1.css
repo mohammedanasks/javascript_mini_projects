@@ -1,0 +1,82 @@
+.main{
+    border: 1px solid black;
+    width: 70%;
+    justify-content: center;
+    margin:0 auto;
+    margin-top: 20px;
+}
+
+.container_1{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.container_2{
+
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.container_2 div{
+    display: flex;
+}
+.container_2 div button:hover{
+    color: rgb(2, 2, 22);
+}
+
+.container_3{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    justify-content:space-around;
+    border: 1px solid black;
+    
+    
+}
+.container_3 input{
+    text-align: center;
+}
+.display_age_text{
+    display: flex;
+    justify-content: center;
+}
+
+.display_age_days_text{
+    display: flex;
+    justify-content: center;
+}
+
+
+.display_age{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    
+    
+}
+.display_age_days{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    
+    
+}
+
+.display_age input{
+    text-align: center;
+    font-weight:bold;
+    font-size: 30px;
+   
+}
+.display_age_days input{
+    text-align: center;
+    font-weight:bold;
+    font-size: 30px;
+   
+}

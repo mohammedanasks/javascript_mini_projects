@@ -1,0 +1,46 @@
+.flex_container{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    border: 1px solid black;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+
+.button{
+    margin: 10px;
+  
+}
+
+.button #reset{
+    width: 90px;
+}
+
+.main h2{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    width: 35%;
+    margin: 0 auto;
+}
+.main {
+    margin-top: 160px;
+}
+.main input{
+    text-align: center;
+}
+
+.result{
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+    border: 1px solid black;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    padding: 10px;
+
+}
