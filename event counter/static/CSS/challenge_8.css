@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+
+    font-family: 'Times New Roman', Times, serif;
+   color: white;
+   background-image: url(https://images.unsplash.com/photo-1518873890627-d4b177c06e51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+   background-size: cover;
+   min-height: 70vh;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+   align-items: center;
+   justify-content: center;
+   background-repeat: no-repeat;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.big_text{
+    font-size: 4rem;
+    line-height: 1;
+    margin: 0 2rem;
+    font-weight: bolder;
+
+}
+
+.sml_txt{
+    text-align: center;
+    
+}
+.sml_txt span{
+    font-size: 20px;
+}
+
+.conainer_1 P{
+    text-align: center;
+    margin-top: 50PX;
+}
+.conainer_1 input{
+    width: 15rem;
+    padding: 7px;
+    
+    border-radius: 10px;
+}
+
+
+.container_2 button{
+
+    margin-top: 10px;
+    width: 6rem;
+    height: 2.5rem;
+}
+
+#event{
+     text-align: center;
+    font-size: 1.3rem;
+}
+
+

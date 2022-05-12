@@ -2,12 +2,16 @@
 
 let total_cost=document.getElementById("total");
 let total_fuel=document.getElementById("fuel")
-c
+
+
+
 
 function calculate(){
     let cost_ltr=document.getElementById("ltr").value;
     let total_km=document.getElementById("km").value;
     let milage=document.getElementById("milage").value;
+    
+    console.log(cost_ltr)
 
     calcu(cost_ltr,total_km,milage)
     
