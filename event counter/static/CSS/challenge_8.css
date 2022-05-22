@@ -24,6 +24,7 @@ body{
 h1{
     font-size: 3rem;
     font-weight: normal;
+    
 }
 
 .main{
@@ -71,4 +72,22 @@ h1{
     font-size: 1.3rem;
 }
 
+.message{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(202, 202, 214);
+    text-align: center;
+    margin-top: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.message button{
+    width: 150px;
+    margin-left: 50px;
+    
+    
 
+}

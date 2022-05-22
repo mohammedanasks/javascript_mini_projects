@@ -15,7 +15,7 @@ let message= new Audio('static/AUDIO/message.mp3')
 
 let counter={'score':0}
 
-
+let div=document.querySelector('body')
  
 run=false;
 
@@ -44,12 +44,18 @@ function count(){
         if(days==1){
             hit_sound.pause()
             message.play()
-            alert("you have event tommorow")
+            div.innerHTML=`<div class="message"><h3>you have a event tommorow</h3><button class="btn btn-primary" id="reload_btn" onclick="(
+                window.location.reload()
+            )">reset counter</button>`
+            
             run=true;
         }
 
     }
   
+}
+resume= ()=>{
+    console.log("resume")
 }
 
 function reset(){

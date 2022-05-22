@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.main{
+    background-color: #bce7e5;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px gray;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background-color:#a49c9f;
+    background-image: linear-gradient(0deg, #a49c9f 0%, #67bdb9 100%);
+    ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family:"Poppins", sans-serif; ;
+    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+}
+
+header input{
+    padding:  0.5rem 1rem;
+    background-color:snow;
+    border: none;
+    border-radius: 3px;
+    margin-left: 45px;
+    font-family: inherit;
+}
+
+header button{
+    background-color: transparent;
+    border: none;
+    font-size: 1.7rem;
+    
+}
+
+.fav_recipe{
+    text-align: center;
+    padding: 1rem;
+    border-top:3px solid #fff ;
+    opacity: 0.9px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+.fav_meal{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    
+}
+.fav_meal li img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+    box-shadow: 0 0 10px 2px gray;
+}
+.meal{
+    box-shadow: 0 0 10px 2px gray;
+    border-radius: 8px;
+    margin: 1.5rem;
+    background-color: snow;
+
+}
+
+.meal_header {
+    position: relative;
+}
+
+.meal_header .random{
+    position: absolute;
+    background-color: #fff;
+    padding:0.25rem 1rem;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.meal_header img{
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.meal_body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    
+    
+}
+
+.meal_body h4{
+    font-size: 1.2rem;
+    
+}
+
+.meal_body .fav_btn{
+    background-color: transparent;
+    border: none;
+    color: rgb(136, 119, 119);
+    font-size: 1.2rem;
+
+}
+
+.meal_body .fav_btn:active{
+    color: rgb(230, 28, 28);
+}
+
+
+
+
