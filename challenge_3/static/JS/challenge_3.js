@@ -1,4 +1,5 @@
 
+
 rpsgame=(yourchoice)=>{
     
     
@@ -7,7 +8,7 @@ rpsgame=(yourchoice)=>{
     
    inte=RandomInteger()
    
-    Botchoice = NumberTochoice(RandomInteger())
+    Botchoice = NumberTochoice(inte)
     
     
     result=DecideWinner(humanChoice,Botchoice)
@@ -17,6 +18,8 @@ rpsgame=(yourchoice)=>{
     message=finalmessage(result)
     
     frontend_view(humanChoice,Botchoice,message)
+
+
 
 
 
@@ -34,6 +37,7 @@ function NumberTochoice(number){
 }
 
 function DecideWinner(humanchoice,botchoice){
+
     var rpsData={
         'papper':{"papper":0.5,"rock":1,"scissors":0},
         'rock':{"papper":0,"rock":0.5,"scissors":1},
@@ -49,8 +53,10 @@ function finalmessage([yourscore,botscore]){
         console.log("you loss")
         return{"message":"you losss !","color":"red"};
         
+        
     }else if(yourscore===1){
         return{"message":"you winn !","color":"green"}
+        winn_sound.play()
     }else if(yourscore===0.5){
         return{"message":"you tied !","color":"yellow"}
     }    
@@ -70,6 +76,7 @@ function frontend_view(yourIMAGEchoice,botchoice,message){
     var human_div=document.createElement("div")
     var bot_div=document.createElement("div")
     var message_div=document.createElement("div");
+     message_div.setAttribute('id','mee');
      
 
     human_div.innerHTML="<img src='"+imagedtabase[yourIMAGEchoice]+"'height=150 width=150 style='box-shadow:0px 10px 50px rgba(37,50,233,1)';>"
@@ -82,35 +89,71 @@ function frontend_view(yourIMAGEchoice,botchoice,message){
    
 }
 
-  let play_score= document.getElementById("human_score");
+  var play_score= document.getElementById("human_score");
   let computer_score= document.getElementById("computer_score");
   let score = 0;
   let score2=0;  
   function scorebord([yourdata,computerdata]){
 
-    
    
-   
-     if(yourdata===1){
-        score++;
-        play_score.innerHTML = score;
-        
-        
-       
-     }else if(yourdata===0){
+     if(yourdata==1){
+        const winn_sound=new Audio('static/AUDIO/pleep.mp3')
+        winn_sound.play()
+            score++;
+            score = score
+            play_score.innerHTML = score;
+     }else if(yourdata==0){
         score2++;
         computer_score.innerHTML = score2;
+        store(score2)
      }
   }
 
   function reload() {
-    window.location.reload();
    
+    window.location.reload()
+
+
 
   }
 
-  window.onbeforeunload = function() {
-    localStorage.setItem("score",score).val();
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

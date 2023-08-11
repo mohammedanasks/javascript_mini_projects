@@ -11,8 +11,6 @@ function calculate(){
     let total_km=document.getElementById("km").value;
     let milage=document.getElementById("milage").value;
     
-    console.log(cost_ltr)
-
     calcu(cost_ltr,total_km,milage)
     
 }

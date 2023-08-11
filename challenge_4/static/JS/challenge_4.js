@@ -106,7 +106,29 @@ function buttenreset_my(){
     }
 }
 
+let gamebutton=  document.getElementsByClassName("btnc")
 
+function playgame(data){
+    console.log(data)
+    let scors=[1,2,3,"*",0]
+    for(let i=0;i<gamebutton.length;i++){
+        let num = Math.floor(Math.random()*5);
+        gamebutton[i].innerHTML="";
+        gamebutton[i].innerHTML=scors[num]
+        var data= gamebutton[i].innerHTML=="*"
+    
 
+        if(gamebutton[i].innerHTML=="*"){
+            
+            data.sy
+        }
+
+    }
+}
+function reset(){
+    for(let i=0;i<gamebutton.length;i++){
+        gamebutton[i].innerHTML="click"
+    }
+}
 
 

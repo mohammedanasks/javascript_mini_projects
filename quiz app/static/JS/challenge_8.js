@@ -1,6 +1,30 @@
 
 
 let quizeapp=[
+        
+{qustion: 'ayttavum valiya buddhu ?',
+a:'minnu',
+b:'chinnu',
+c:'chingu',
+d:'lallu',
+correct:'c'
+},
+    
+{qustion:'who is sundaran?',
+a:'sachu',
+b:'minnu',
+c:'chinnu',
+d:'kochu',
+correct:'b'
+},
+    
+{qustion:'minister of kerala?',
+a:'arjnun',
+b:'chynnithala',
+c:'achudandhan',
+d:"pinarai",
+correct:'b'
+},
     
 {qustion:'most popular programming language in the world ?',
 a:'java',
